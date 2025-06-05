@@ -1,70 +1,69 @@
-#1
-n = int(input('numero: '))
+# 1
+def comparar():
+    n1 =  int(input('Digite um número> '))
+    n2 =  int(input('Digite um número> '))
 
-if n > 0:
-    print('POsitivo')
-elif n < 0:
-    print('negativo')
-else:
-    print('Zero')
-
-
+    if n1 % 2 == 0 and n2 % 2 == 0:
+        print('Ambos sã pares')
+    elif n1 % 2 == 0 or n2 % 2 == 0:
+        print('Um deles é par')
+    else:
+        print('Ambos impares')
 # 2
-idade  = 18
-
-if idade >= 16:
-    print('Pode votar')
-else:
-    print('Não pode votar')
+def mult():
+    print(3*4*5)
     
-# 3     
-
-var  =  10
-
-if var % 2 == 0:
-    print('par')
-else:
-    print('Impar')
     
+#3
+def elevado():
+  n  = 10
+  n2 = int(input('valor elevado'))
+  print(n**n2)
+  
 # 4
-
-l1 = 1
-l2 = 2
-l3 = 3
-
-if l1 == l2 == l3 == l1:
-    print('Equilatero')
-elif l1 != l2 != l3 != l1:
-    print('Escaleno')
-else: 
-    print('isocesles')  
-#5
-
-multiplo  = int(input('nº>  '))
-
-if multiplo % 5 == 0 and multiplo % 7 == 0:
-    print('São multiplos')
-elif multiplo % 5 == 0 or multiplo % 7 == 0:
-    print('Apenas 1 é multiplo')
-else:
-    print('nenhum é...')
-
-#6
-    
-n =  15
-
-if n > 10:
-    print('O número é positivo e maior que 10')
-    
-else:
-    print('Não é nada')
+def verificar_idade():
+    idade =  int(input('idade: '))
+    if idade == 18:
+        print('18  anos')
+    else:
+        print('Não tem 18')
 
 
-#7
-    
-n1   =  15
+# verificar_idade()
 
-if n1 % 3 == 0 and n1 % 5==0:
-    print('São divisiveis')
-else:
-    print('Não são!')
+
+
+# 5
+def mostrar_ano():
+    ano_atual = 2025
+    ano_nascimento = int(input('Ano nascimento:'))
+    mes =  int(input('digite o numero do mês 1'))
+    cal  =  2025 - ano_nascimento
+
+    if mes <=6:
+        print('Ano nascimento', cal)
+    else:
+
+         print('Ano nascimento', cal - 1)
+
+#mostrar_ano()
+
+def verificar():
+    copas = [1958,1962,1970,1994,2002]
+
+    ano =  int(input('Digite o ano que vc acha que o br granhou'))
+    if ano in copas:
+        print('ganhou!')
+    else:
+        print('Não ganhou!')
+
+#verificar()
+
+def restaurante():
+    lista =  ['Macarronada', 'Salada', 'Sanbuiche', 'Sorvete']
+    print(lista)
+    escolha  =  int(input('Digite o id do produto: '))
+    print('Escolha: ',  lista[escolha])
+
+while True:
+      restaurante()
